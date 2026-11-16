@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillTrust Academy · ระบบใบรับรองดิจิทัลตามบทบาท</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@500;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand">
+      <svg width="44" height="40" viewBox="0 0 24 24" fill="none" stroke="#9fdcff" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
+      <div><b>SkillTrust</b><span>Academy · Blockchain Cert</span></div>
+    </div>
+    <div class="label">เข้าสู่ระบบในฐานะ</div>
+    <div class="roles" id="roles"></div>
+    <div class="label">เมนู</div>
+    <nav id="nav" style="display:grid;gap:4px"></nav>
+    <div class="foot">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l7 10-7 4-7-4z"/><path d="M5 15l7 7 7-7-7 4z"/></svg>
+      <span>ขับเคลื่อนด้วย Ethereum Smart Contract</span>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb" id="crumb"></div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button class="btn sm" id="chainPend" type="button" data-act="chainFlush" style="display:none"></button>
+        <span class="pill-role" id="rolePill"></span>
+        <button class="wchip" data-act="wallet"><span class="dot" id="wdot"></span><span id="wlabel"></span></button>
+      </div>
+    </div>
+    <div id="page"></div>
+  </div>
+</div>
+<div id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
